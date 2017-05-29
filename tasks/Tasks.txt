@@ -1,0 +1,65 @@
+MILESTONE 2
+
+1) Fix Pagination styling
+
+2) Error handling/reporting
+Currently when things go wrong, very hard to debug and tell what went wrong.
+I need the error handling updated so we can see what is going on.
+
+Whenever there is a database operation or other error, log a descriptive error
+a) by the red coloring it seems to do in the cell
+b) in the message area? (is this used by the product?)
+c) to the javascript console
+
+Log database operations to db.log
+Ajax operations can be logged to a file
+
+3) Handle datetime field in database.
+Always show dates, datetimes, timestamps etc in iso format
+0000-00-00 for dates and 0000-00-00 00:00:00 for datetimes
+with dates, the clue is it goes red as soon as you click on it.
+Actually datetimes/timestamps should just be rendered as ISO text, we don't want calendar popup for these.
+
+
+4) TABLE CONFIGURATION
+When initialising the table, 
+If tablename.spec.tsv exists, use that
+Else if tablename.tsv exists, use that
+Else 
+	The database table metatdata should be scanned by querying information_schema in a way which is portable to mysql and postgres.
+	run the [mysql|pgsql]_meta.sql query
+	write the results to tablename.tsv
+	use the results
+
+In this way, the solution gracefully degrades.
+If the developer has created a spec, it uses that. 
+If not, it creates a generic table and a spec file which can be edited.
+
+5) PRIMARY KEY
+Primary key and whether it autoincrements should be identified from the table above
+NB. this means if the primary key being named "id" is hardcoded in the solution, this needs to be changed.
+IF there is auto_increment, use that.
+If not, then find the maximum id and increment
+When we write the tablename.tsv above, the primary key should be marked as non-editable.
+
+6) POSTGRES
+Reproduce scenario1 and scenario2 in postgres and write the sql dumps for them (done)
+Update get_col_type for major postgres types (done).
+
+Note that postgres uses serial instead of autoincrement.
+Adapt meta.sql for postgres. You will need to write special code to get postgres primary keys.
+We only need to support single column primary keys.
+
+
+7) CHARACTER LENGTHS
+I Postgres will error if you try and update a charater field greater than it's maximum (whereas by default MYSQL will truncate).
+For strings, can you set the textfield maxlength to the metadata max length i.e. so the user can't input more characters than allowed).
+
+8) COLUMN TYPES
+Ignore enum and id_detail columns for now, I will consider this kind of stuff later.
+Just treat as text
+
+9) MINOR ISSUES
+a) Integers are formatted with bold for some reason. Please change this.
+b) If I just load pdodb.php in the browser it gives an error, I think based on the way it's written.
+Is it easy to modify it slightly so it can be executed on its own without an error?

@@ -27,7 +27,6 @@ SET time_zone = "+00:00";
 --
 -- Structure de la table `continent`
 --
-
 DROP TABLE IF EXISTS `continent`;
 CREATE TABLE IF NOT EXISTS `continent` (
   `id` char(2) NOT NULL,

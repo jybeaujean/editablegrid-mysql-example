@@ -1,0 +1,754 @@
+/* used for render_actions_narrow */
+div.leftnav ul, div.leftnav li {
+    margin: 0px !important;
+    padding: 0px !important;
+}
+
+select[multiple].sds {
+	overflow-y: hidden;
+}
+
+#wrapper {
+	overflow-x: scroll !important;
+}
+body {
+	overflow-x: scroll !important;
+}
+
+td.right-align {
+	text-align: right !important;
+}
+
+.itunes label {
+	margin:0;
+	padding:0;
+}
+
+.form-control {
+	width: auto !important;
+}
+
+td.left_nav {
+    padding-right: 20px;
+}
+
+div#top-menu {
+    margin-top: 14px;
+}
+
+table.fullwidth {
+	width: 100px;
+}
+td.fullwidth {
+	width: 100px;
+}
+table.layout td {
+	/* padding:2px; */
+	white-space: nowrap;
+	vertical-align: top;
+}
+
+
+/* Special Controls */
+.checkbox_group_special legend,
+.radio_group_special legend {
+	display: block;
+	width: 100%;
+	padding: 0px;
+	margin-bottom: 0px;
+	font-size: 12px;
+	line-height: 20px;
+}
+.checkbox_group_special fieldset,
+.radio_group_special fieldset {
+	margin-bottom: 5px;
+}
+
+.special_button {
+	margin: 0px 0px;
+	min-width: 150px;
+	text-align: left;
+	font-size: 11px;
+	line-height: 12px;
+	padding: 3px 9px;
+	font-weight: bold;
+}
+.checkbox_group_special legend	{
+    font-weight: bold;
+}
+
+.checkbox_group_special input[type=checkbox]{
+    display: none;
+}
+.radio_group_special input[type=radio]{
+    display: none;
+}
+
+/* Special Controls */
+
+
+.toggle_detail2 {
+		height:300px;
+		background-color: #99CCFF;
+		padding:20px;
+		margin-top:10px;
+		border-bottom:5px solid #3399FF;
+}
+.ui-tooltip {
+	width: 900px;
+}
+
+#nc label {
+	display: block;
+	margin: 0px;
+}
+#nc input[type="radio"], #nc input[type="checkbox"] {
+	/* margin:0px; */
+	/* padding:0px; */
+}
+
+.myrow {
+	margin_left:20px;
+  width: 100%;
+}
+.cell {
+    float: left;
+}
+
+/* Table cell coloring */
+tr.bold td {
+	font-weight: bold;
+}
+.grey {
+	background-color: #c0c0c0 !important;
+
+}
+.white{
+	background-color: white !important;
+
+}
+.light_green {
+	background-color: #CCFFCC !important;
+
+}
+
+.dark_green{
+	background-color: #a6ffa6 !important;
+
+}
+.light_red {
+	background-color: #FFCCCC !important;
+
+}
+
+.dark_red{
+	background-color: #d50000 !important;
+
+}
+.orange {
+	background-color: #ffd2a6 !important;
+
+}
+
+.light_blue{
+	background-color: #D4E2F7 !important;
+
+}
+.blue {
+	background-color: #9fcfff !important;
+
+}
+.dark_blue{
+	background-color: #3d80df !important;
+
+}
+.light_purple{
+	background-color: #e8e8ff !important;
+
+}
+.purple{
+	background-color: #d0d0ff !important;
+
+}
+.yellow{
+	background-color: #ffffcc !important;
+
+}
+.pink{
+	background-color: #ffcce6 !important;
+
+}
+.cyan{
+	background-color: #F0F8FF !important;
+
+}
+
+
+
+/* Hide scrollbars on select controls */
+.bloc { display:inline-block; vertical-align:top; overflow:hidden; border:solid grey 1px; }
+.bloc select { padding:10px; margin:-5px -20px -5px -5px; }
+
+
+div.seperator	{
+	clear:both;
+	padding-top: 10px;
+}
+
+/*  mess with */
+ztable.layout,
+ztable.layout td {
+	border: 10px solid red;
+	margin: 50px;
+	padding: 50px;
+	font-size:20px;
+	font-family: cursive;
+}
+
+
+/* Itunes Table */
+table.itunes {
+	border-collapse: collapse;
+	border: 1px solid #666666;
+	margin:  0;
+	padding: 0;
+	white-space:nowrap;
+	line-height: normal;
+}
+table.itunes tr {
+	vertical-align:top;
+}
+
+table.itunes td	{
+	border: 0;
+	border-left: 1px solid #D9D9D9;
+	margin: 0;
+	padding: 3px 8px;
+	font-family: "lucida grande", verdana, sans-serif;
+	font-size: 8pt;
+	color:inherit;
+	white-space:nowrap;
+}
+
+table.itunes a,
+table.itunes a:link,
+table.itunes a:visited {
+	text-decoration:none;
+	color: #3d80df;
+}
+table.itunes a:hover {
+	background-color: #ffff80;
+}
+table.itunes tr.odd td {
+	background-color: white;
+}
+table.itunes tr.even td    	{
+background-color: #D4E2F7;
+}
+
+
+table.itunes th,
+table.itunes tr.heading td,
+table.itunes tr td.heading {
+	border-left: 1px solid #346DBE;
+	border-bottom: 1px solid #7DAAEA;
+	margin:0;
+	padding: 3px 8px;
+	font-family: "lucida grande", verdana, sans-serif;
+	font-size: 9pt;
+	background-color: #6ba7fd;
+	color: #ffffff;
+	font-weight: bold;
+	text-align: left;
+}
+
+table.itunes th a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+table.itunes th a:hover	{
+    background: blue;
+}
+
+table.itunes td a {
+    display: block;
+    color: #313131;
+    text-decoration: none;
+}
+
+
+table.bordered td {
+    border: 1px solid gray !important;
+}
+
+/* Lazy Table */
+table.lazy {
+	border-collapse: collapse;
+}
+table.lazy tr th,
+table.lazy tr td.heading {
+	font-weight:bold;
+}
+table.lazy tr td,
+table.lazy tr th {
+	border: 1px solid #dddddd;
+	padding-top: 5px;
+	padding-right: 10px;
+	padding-bottom: 5px;
+	padding-left: 10px;
+	line-height: normal;
+	white-space:nowrap;
+	font-size:small;
+}
+table.lazy tr.odd td{
+	background-color: rgb(251, 251, 251);
+}
+
+/* Metric Table */
+table.metric_table {
+	border-collapse: collapse;
+}
+table.metric_table tr td {
+	border-bottom: 1px solid #dddddd;
+	padding-top: 2px;
+	padding-right: 5px;
+	padding-bottom: 2px;
+	padding-left: 5px;
+	line-height: normal;
+	white-space:nowrap;
+	font-weight:normal;
+	font-size:small;
+}
+table.metric_table tr th,
+table.metric_table tr td.heading {
+	border-bottom: 1px solid #dddddd;
+	padding-top: 5px;
+	padding-right: 10px;
+	padding-bottom: 5px;
+	padding-left: 5px;
+	line-height: normal;
+	white-space:nowrap;
+	font-weight:bold;
+	font-size:small;
+}
+table.metric_table tr.odd td{
+	background-color: rgb(251, 251, 251);
+}
+table.metric_table tr td.spark {
+	padding:0;
+	margin:0;
+}
+
+h2.metric_table_header {
+	padding-top:20px;
+	padding-left:0px;
+	margin-left:0px;
+}
+
+
+/* MCP */
+table.mcp {
+    border-collapse: collapse;
+    border: 1px solid black;
+    font-family: Verdana, Arial, Helvetica, Geneva, sans-serif;
+}
+table.mcp td {
+    padding: 2px;
+    border: 1px solid black;
+    font-size: 8pt;
+    background-color: white;
+}
+
+table.mcp td a {
+    color: #3d80df;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+table.mcp td a:hover {
+    text-decoration: underline;
+}
+
+table.mcp tr.even td    {   background-color: #D4E2F7;  }
+table.mcp tr.odd  td    {   background-color: white;    }
+table.mcp tr.summary td {   background-color: #C0D6F5;  }
+table.mcp tr.excluded td {   background-color: red;  }
+
+table.mcp tr td.error
+{
+   border-top: 2px solid red;
+   border-bottom: 2px solid red;
+   background-color: #f99;
+}
+
+table.mcp th,
+table.mcp tr td.heading {
+    padding: 5px;
+    border: 1px solid black;
+    font-size: 12px;
+    font-weight: bold;
+    color: white;
+    background-color:           #3d80df;
+    white-space:nowrap;
+    vertical-align: top;
+    text-align: center;
+}
+
+table.mcp th h1,
+table.mcp td.heading h1,
+table.mcp th h2,
+table.mcp td.heading h2,
+table.mcp th h3,
+table.mcp td.heading h3,
+table.mcp th h4,
+table.mcp td.heading h4
+{
+     color: white;
+}
+
+table.mcp th a,
+table.mcp tr td.heading a {
+
+    color: white;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+table.green {
+    border-collapse: collapse;
+    border: 1px solid black;
+    font-family: Verdana, Arial, Helvetica, Geneva, sans-serif;
+}
+
+table.green td {
+    padding: 5px;
+    border: 1px solid black;
+    font-size: 8pt;
+}
+table.green th,
+table.green tr td.heading {
+    padding: 5px;
+    border: 1px solid black;
+    font-size: 12px;
+    font-weight: bold;
+    color: white;
+    background-color:           #669966;
+}
+
+table.green tr.odd  	td 	{   background-color: white;    }
+table.green tr.even  	td 	{   background-color: #CCFFCC;  }
+table.green tr.summary 	td 	{   background-color: #669966;  }
+table.green tr.excluded td 	{   background-color: #FFD0CC;  }
+
+table.purple	{
+    border-collapse: collapse;
+	border: 1px solid #666666;
+    font-family: Verdana, Arial, Helvetica, Geneva, sans-serif;
+
+}
+
+table.purple th,
+table.purple tr td.heading
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 12pt;
+    COLOR: white;
+    FONT-FAMILY: Verdana, Arial, Helvetica, Geneva, sans-serif;
+    BACKGROUND-COLOR: #4D4D80;
+}
+
+table.purple td	{
+    padding: 5px;
+    PADDING-LEFT: 4pt;
+    PADDING-RIGHT: 4pt;
+    FONT-SIZE: 8pt;
+    COLOR: #4f004f;
+    FONT-FAMILY: Verdana, Arial, Helvetica, Geneva, sans-serif;
+
+}
+table.purple tr.even td   {       BACKGROUND-COLOR: #d0d0ff;  }
+table.purple tr.odd td    {       BACKGROUND-COLOR: #e8e8ff;  }
+
+
+/* Old Message Boxes */
+table.fatal_box {
+	margin: 0px;
+	padding: 10px 50px 10px 10px;
+	border: 2px solid #b00000;
+	background-color: #ff9b9b;
+}
+table.fatal_box tr td h1,
+table.fatal_box pre {
+	color: #b00000;
+	font-family: "lucida grande", verdana, lucida, sans-serif;
+}
+table.warning_box {
+	padding: 10px 50px 10px 10px;
+	border: 2px solid #c16100;
+	background-color: #ffc2a6;
+}
+table.warning_box tr td h1,
+table.warning_box tr td pre {
+	font-family: "lucida grande", verdana, lucida, sans-serif;
+	color: #c16100;
+}
+table.msgbox_box {
+	margin: 10px;
+	padding: 5px 20px 5px 5px;
+	border: 2px solid #004000;
+	background-color: #c6ffc6;
+}
+table.msgbox_box tr td h1,
+table.msgbox_box tr td pre {
+	color: #004000;
+	font-family: "lucida grande", verdana, lucida, sans-serif;
+}
+
+table.debug_box {
+	margin: 10px;
+	padding: 5px 20px 5px 5px;
+	border: 2px solid #004000;
+	background-color: #c6ffc6;
+}
+table.debug_box tr td h1,
+table.debug_box tr td pre {
+	color: #004000;
+	font-size:8pt;
+	font-family: "lucida grande", verdana, lucida, sans-serif;
+}
+
+
+/* Messages */
+.message {
+	padding: 10px 15px 10px 40px;
+	margin: 10px 0;
+	font-weight: bold;
+	overflow: hidden;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+.message p {
+	margin:0;
+	padding: 0;
+	width: 93%;
+	float: left;
+}
+.message.errormsg {
+	border: 1px solid #e9c59b;
+	background: #ffecce url(images/messages/error.gif) 12px 12px no-repeat;
+	color: #e3302c;
+}
+.message.success {
+	border: 1px solid #bfde84;
+	background: #edfbd8 url(images/messages/success.gif) 12px 12px no-repeat;
+	color: #508600;
+}
+.message.info {
+	border: 1px solid #bbdbe0;
+	background: #ecf9ff url(images/messages/info.gif) 12px 12px no-repeat;
+	color: #0888c3;
+}
+
+.message.warning {
+	border: 1px solid #e5e181;
+	background: #fefde2 url(images/messages/warning.gif) 12px 12px no-repeat;
+	color: #666;
+}
+.message.close {
+	display: block;
+	float: right;
+	width: 16px;
+	height: 16px;
+	background: url(images/messages/close.png) 0 0 no-repeat;
+	margin-top: 2px;
+	cursor: pointer;
+	-moz-opacity: 0.7;
+	opacity: 0.7;
+}
+
+.message.close.hover {
+	-moz-opacity: 1;
+	opacity: 1;
+}
+
+
+
+
+/*
+body,p,input,label,button,form,h1,h2,h3,h4,h5 {
+	font-family: "lucida grande", verdana, lucida, sans-serif;
+	color: #5c5c5c;
+}
+a {
+	color:inherit;
+	text-decoration:none;
+}
+a:visited {
+	color:inherit;
+	text-decoration:none;
+}
+a:hover {
+	color:inherit;
+	text-decoration:underline;
+}
+*/
+
+.datagrid table {
+	border-collapse: collapse;
+	text-align: left;
+	width: 100%;
+}
+
+.datagrid {
+	font: normal 10px/150% Arial, Helvetica, sans-serif;
+	background: #fff;
+	overflow: hidden;
+	border: 1px solid #006699;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+
+.datagrid table td, .datagrid table th {
+	padding: 3px 10px;
+}
+
+.datagrid table thead th {
+	background: -webkit-gradient( linear, left top, left bottom, color-stop(0.05, #006699), color-stop(1, #00557F) );
+	background: -moz-linear-gradient( center top, #006699 5%, #00557F 100% );
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#006699', endColorstr='#00557F');
+	background-color: #006699;
+	color: #FFFFFF;
+	font-size: 12px;
+	font-weight: bold;
+	border-left: 1px solid #0070A8;
+}
+
+.datagrid table thead th:first-child {
+	border: none;
+}
+
+.datagrid table tbody td {
+	color: #00557F;
+	border-left: 1px solid #E1EEF4;
+	font-size: 11px;
+	font-weight: normal;
+}
+
+.datagrid table tbody .even td {
+	background: #E1EEf4;
+	color: #00557F;
+}
+
+.datagrid table tbody td:first-child {
+	border-left: none;
+}
+
+.datagrid table tbody tr:last-child td {
+	border-bottom: none;
+}
+
+.datagrid table tfoot td div {
+	border-top: 1px solid #006699;
+	background: #E1EEf4;
+}
+
+.datagrid table tfoot td {
+	padding: 0;
+	font-size: 12px
+}
+
+.datagrid table tfoot td div {
+	padding: 2px;
+}
+
+.datagrid table tfoot td ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-align: right;
+}
+
+.datagrid table tfoot  li {
+	display: inline;
+}
+
+.datagrid table tfoot li a {
+	text-decoration: none;
+	display: inline-block;
+	padding: 2px 8px;
+	margin: 1px;
+	color: #FFFFFF;
+	border: 1px solid #006699;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	background: -webkit-gradient( linear, left top, left bottom, color-stop(0.05, #006699), color-stop(1, #00557F) );
+	background: -moz-linear-gradient( center top, #006699 5%, #00557F 100% );
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#006699', endColorstr='#00557F');
+	background-color: #006699;
+}
+
+.datagrid table tfoot ul.active, .datagrid table tfoot ul a:hover {
+	text-decoration: none;
+	border-color: #00557F;
+	color: #FFFFFF;
+	background: none;
+	background-color: #006699;
+}
+
+
+table.excel {
+	border: 1px solid #B0CBEF;
+	border-width: 1px 0px 0px 1px;
+	font-size: 11pt;
+	font-family: Calibri;
+	font-weight: 100;
+	border-spacing: 0px;
+	border-collapse: collapse;
+	background-color: white;
+}
+
+table.excel TH {
+	background-image: url(/includes/excel_table/excel-2007-header-bg.gif);
+	background-repeat: repeat-x; 
+	font-weight: 500;
+	font-size: 14px;
+	border: 1px solid #9EB6CE;
+	border-width: 0px 1px 1px 0px;
+	height: 17px;
+	text-align: center;
+	padding: 0px 6px 0px 4px;
+}
+
+table.excel TD {
+	border: 0px;
+	background-color: inherit;
+	padding: 0px 6px 0px 4px;
+	border: 1px solid #D0D7E5;
+	border-width: 0px 1px 1px 0px;
+}
+
+table.excel TD B {
+	border: 0px;
+	background-color: white;
+	font-weight: bold;
+}
+
+table.excel TD.heading {
+	background-color: #E4ECF7;
+	text-align: center;
+	border: 1px solid #9EB6CE;
+	border-width: 0px 1px 1px 0px;
+}
+
+table.excel TH.heading {
+	background-image: url(/includes/excel_table/excel-2007-header-left.gif);
+	background-repeat: none;
+}
+
+div.toggle {
+    padding: 6px 4px 2px 1px;
+}

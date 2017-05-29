@@ -51,13 +51,23 @@ input.invalid {
 	color: #FDFDFD;
 }
 
-#message {
+.message,.grid_message {
+    margin:5px;
+    
+
 	width: 100%;
+    font-size:14px;
 }  
+.message.error,.grid_message.error {
+	color:red;
+}
+.message.success, .grid_message.success {
+	color:green;
+}
 
 td.number {
 	text-align: right;
-	font-weight: bold;
+	font-weight: normal;
 	padding-right: 5px;
 	white-space: nowrap;
 }
@@ -113,7 +123,7 @@ img.icon {
   width: 16px;
   cursor: pointer;
 }
-#paginator .icon {
+.paginator .icon {
   width: 24px;
   margin: 3px;
   vertical-align: middle;
@@ -132,18 +142,18 @@ img.icon {
 	border: 0px;	
 }
 
-#paginator {
+.paginator {
   	margin: 10px 0;
 	font-size: 1.4em;
 	text-align: center;
 	margin-bottom: 5px;
 }
 
-#paginator a { color:  #0078cc; text-decoration: none;line-height: 40px; padding: 4px 8px;   }           
-#paginator a:hover { color: #000; }
-#paginator a:active, #currentpageindex {  background-color: #0078cc; color: #fff; border-radius: 5px;}
-#paginator span#currentpageindex {  padding: 4px 8px;  }
-#paginator a:focus { outline: 1px; }
+.paginator a { color:  #0078cc; text-decoration: none;line-height: 40px; padding: 4px 8px;   }           
+.paginator a:hover { color: #000; }
+.paginator a:active, #currentpageindex {  background-color: #0078cc; color: #fff; border-radius: 5px;}
+.paginator span#currentpageindex {  padding: 4px 8px;  }
+.paginator a:focus { outline: 1px; }
 
 #filter { 
 	width: 250px;

@@ -1,0 +1,69 @@
+-- Converted by db_converter
+START TRANSACTION;
+SET standard_conforming_strings=off;
+SET escape_string_warning=off;
+SET CONSTRAINTS ALL DEFERRED;
+
+
+CREATE TYPE scenario1_enum AS ENUM ('ok','not_ok'); 
+CREATE TABLE "scenario1" (
+    "id" bigint  NOT NULL,
+    "name" varchar(200) NOT NULL,
+    "int" integer DEFAULT NULL,
+    "currency" decimal(18,2) DEFAULT NULL,
+    "float" float(25) DEFAULT NULL,
+    "bool" int4 DEFAULT NULL,
+    "date" date DEFAULT NULL,
+    "datetime" timestamp with time zone DEFAULT NULL,
+    "text" text ,
+    "email" varchar(200) DEFAULT NULL,
+    "varchar_10" varchar(20) NOT NULL,
+    "id_detail" integer DEFAULT NULL,
+    "enum" scenario1_enum DEFAULT NULL,
+    "default" varchar(510) NOT NULL DEFAULT 'FOOBAR',
+    PRIMARY KEY ("id")
+);
+
+INSERT INTO "scenario1" VALUES (1,'Andon',88,1.32,1.00000,1,'2017-05-05','2017-05-04 00:00:00','asdfasdfasdf\r\n\r\n\r\n\r\nadfl;djasfa','Nam@quisdiamluctus.org','1234567890',1,'ok','FOOBAR'),(2,'Atkins',44,5.55,1.50000,0,NULL,'2017-05-05 12:30:00',NULL,'arcu.et.pede@musProin.cam','Ishmael',2,'not_ok','foobar'),(3,'Hamilton',10,10.50,1.00000,1,NULL,NULL,NULL,'dui@duiCras.edu','Mohammad',3,'ok','FOOBAR'),(4,'Nicholas',18,1.92,2.00000,0,NULL,NULL,NULL,'mollis@eutellus.co.uk','Troy',4,NULL,'FOOBAR'),(5,'Schwartz',79,1.50,1.00000,0,'2012-03-16',NULL,NULL,'ante@adipiscing.org','Carla',1,NULL,'there');
+CREATE TYPE scenario2_enum AS ENUM ('ok','not_ok'); 
+CREATE TABLE "scenario2" (
+    "id" integer NOT NULL,
+    "name" varchar(200) NOT NULL,
+    "int" integer DEFAULT NULL,
+    "currency" decimal(18,2) DEFAULT NULL,
+    "float" float(25) DEFAULT NULL,
+    "bool" int4 DEFAULT NULL,
+    "date" date DEFAULT NULL,
+    "datetime" timestamp with time zone DEFAULT NULL,
+    "text" text ,
+    "email" varchar(200) DEFAULT NULL,
+    "varchar_10" varchar(20) NOT NULL,
+    "id_detail" integer DEFAULT NULL,
+    "enum" scenario2_enum DEFAULT NULL,
+    "default" varchar(510) NOT NULL DEFAULT 'FOOBAR',
+    PRIMARY KEY ("id")
+);
+
+INSERT INTO "scenario2" VALUES (0,'',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'',NULL,NULL,'FOOBAR'),(1,'Andon',88,1.32,1.00000,1,'2017-05-05','2017-05-04 00:00:00','asdfasdfasdf\r\n\r\n\r\n\r\nadfl;djasfa','Nam@quisdiamluctus.org','1234567890',1,'ok','FOOBAR'),(2,'Atkins',44,5.55,1.50000,0,NULL,'2017-05-05 12:30:00',NULL,'arcu.et.pede@musProin.cam','Ishmael',2,'not_ok','foobar'),(3,'Hamilton',10,10.50,1.00000,1,NULL,NULL,NULL,'dui@duiCras.edu','Mohammad',3,'ok','FOOBAR'),(4,'Nicholas',18,1.92,2.00000,0,NULL,NULL,NULL,'mollis@eutellus.co.uk','Troy',4,NULL,'FOOBAR'),(5,'Schwartz',79,1.50,1.00000,0,'2012-03-16',NULL,NULL,'ante@adipiscing.org','Carla',1,NULL,'there');
+
+-- Post-data save --
+COMMIT;
+START TRANSACTION;
+
+-- Typecasts --
+ALTER TABLE "scenario1" ALTER COLUMN "bool" DROP DEFAULT, ALTER COLUMN "bool" TYPE boolean USING CAST("bool" as boolean);
+ALTER TABLE "scenario2" ALTER COLUMN "bool" DROP DEFAULT, ALTER COLUMN "bool" TYPE boolean USING CAST("bool" as boolean);
+
+-- Foreign keys --
+
+-- Sequences --
+CREATE SEQUENCE scenario1_id_seq;
+SELECT setval('scenario1_id_seq', max(id)) FROM scenario1;
+ALTER TABLE "scenario1" ALTER COLUMN "id" SET DEFAULT nextval('scenario1_id_seq');
+CREATE SEQUENCE scenario2_id_seq;
+SELECT setval('scenario2_id_seq', max(id)) FROM scenario2;
+ALTER TABLE "scenario2" ALTER COLUMN "id" SET DEFAULT nextval('scenario2_id_seq');
+
+-- Full Text keys --
+
+COMMIT;
