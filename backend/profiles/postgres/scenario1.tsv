@@ -1,0 +1,15 @@
+schema	table	field	label	order	type	character_maximum_length	column_key	extra	display	editable
+demo	scenario1	id	id	1	integer		PRIMARY KEY	nextval('scenario1_id_seq'::regclass)	1	1
+demo	scenario1	name	name	2	string	100			1	1
+demo	scenario1	int	int	3	integer				1	1
+demo	scenario1	currency	currency	4	float				1	1
+demo	scenario1	float	float	5					1	1
+demo	scenario1	bool	bool	6	integer				1	1
+demo	scenario1	date	date	7	date				1	1
+demo	scenario1	datetime	datetime	8	string				1	1
+demo	scenario1	text	text	9	string				1	1
+demo	scenario1	email	email	10	email	100			1	1
+demo	scenario1	varchar_10	varchar_10	11	string	10			1	1
+demo	scenario1	id_detail	id_detail	12	integer				1	1
+demo	scenario1	enum	enum	13	string	255			1	1
+demo	scenario1	default	default	14	string	255			1	1

@@ -1,0 +1,26 @@
+2017-05-31 03:59:28:get_meta:here
+2017-05-31 03:59:28:parse_meta_file:C:\github\editable_grid\demo\backend/profiles/postgres/scenario1.tsv:Array
+2017-05-31 03:59:28:duplicate:SELECT * FROM scenario1 WHERE id='1':Array
+(
+    [id] => 1
+    [name] => Andon
+    [int] => 88
+    [currency] => 1.32
+    [float] => 1
+    [bool] => 1
+    [date] => 2017-05-05
+    [datetime] => 2017-05-04 00:00:00
+    [text] => asdfasdfasdfadfl;djasfa
+    [email] => Nam@quisdiamluctus.org
+    [varchar_10] => 1234567890
+    [id_detail] => 1
+    [enum] => ok
+    [default] => FOOBAR
+)
+
+2017-05-31 03:59:28:insert:INSERT INTO scenario1  ("int","currency","float","bool","date","datetime","text","email","varchar_10","id_detail","enum","default") VALUES ('88','1.32','1','1','2017-05-05','2017-05-04 00:00:00','asdfasdfasdfadfl;djasfa','Nam@quisdiamluctus.org','1234567890','1','ok','FOOBAR'):ok
+2017-05-31 03:59:28:errorInfo:23505:7:ERROR:  duplicate key value violates unique constraint "scenario1_int_idx"
+DETAIL:  Key ("int")=(88) already exists.
+2017-05-31 03:59:31:get_meta:here
+2017-05-31 03:59:31:parse_meta_file:C:\github\editable_grid\demo\backend/profiles/postgres/scenario1.tsv:Array
+2017-05-31 03:59:31:insert:INSERT INTO scenario1  ("int","currency","float","bool","date","datetime","text","email","varchar_10","id_detail","enum","default") VALUES (default,default,default,default,default,default,default,default,default,default,default,default):ok

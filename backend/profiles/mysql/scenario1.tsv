@@ -1,0 +1,15 @@
+schema	table	field	label	order	type	character_maximum_length	column_key	extra	display	editable
+demo	scenario1	id	id	1	bigint		PRI	auto_increment	1	1
+demo	scenario1	name	name	2	varchar	100			1	1
+demo	scenario1	int	int	3	int				1	1
+demo	scenario1	currency	currency	4	decimal				1	1
+demo	scenario1	float	float	5	float				1	1
+demo	scenario1	bool	bool	6	tinyint				1	1
+demo	scenario1	date	date	7	date				1	1
+demo	scenario1	datetime	datetime	8	datetime				1	1
+demo	scenario1	text	text	9	text	65535			1	1
+demo	scenario1	email	email	10	varchar	100			1	1
+demo	scenario1	varchar_10	varchar_10	11	varchar	10			1	1
+demo	scenario1	id_detail	id_detail	12	int				1	1
+demo	scenario1	enum	enum	13	enum	6			1	1
+demo	scenario1	default	default	14	varchar	255			1	1

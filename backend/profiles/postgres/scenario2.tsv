@@ -1,0 +1,15 @@
+schema	table	field	label	order	type	character_maximum_length	column_key	extra	display	editable
+public	scenario2	id	id	1	integer		PRIMARY KEY		1	1
+public	scenario2	name	name	2	string	200			1	1
+public	scenario2	int	int	3	integer				1	1
+public	scenario2	currency	currency	4	float			NULL::numeric	1	1
+public	scenario2	float	float	5					1	1
+public	scenario2	bool	bool	6	integer				1	1
+public	scenario2	date	date	7	date				1	1
+public	scenario2	datetime	datetime	8	string				1	1
+public	scenario2	text	text	9	string				1	1
+public	scenario2	email	email	10	email	200		NULL::character varying	1	1
+public	scenario2	varchar_10	varchar_10	11	string	20			1	1
+public	scenario2	id_detail	id_detail	12	integer				1	1
+public	scenario2	enum	enum	13					1	1
+public	scenario2	default	default	14	string	510		'FOOBAR'::character varying	1	1

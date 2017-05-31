@@ -1,1 +1,6 @@
 /config.php
+/db.log
+/db/mysql/config.php
+/db/postgres/config.php
+/backend/profiles/mysql/config.php
+/backend/profiles/postgres/config.php
