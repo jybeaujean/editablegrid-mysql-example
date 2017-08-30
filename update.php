@@ -19,11 +19,11 @@ $mysqli->real_connect($config['db_host'],$config['db_user'],$config['db_password
                       
 // Get all parameters provided by the javascript
 $colname = $mysqli->real_escape_string(strip_tags($_POST['colname']));
-$id = $mysqli->real_escape_string(strip_tags($_POST['id']));
+$id = strip_tags($_POST['id']);
 $coltype = $mysqli->real_escape_string(strip_tags($_POST['coltype']));
-$value = $mysqli->real_escape_string(strip_tags($_POST['newvalue']));
+$value = strip_tags($_POST['newvalue']);
 $tablename = $mysqli->real_escape_string(strip_tags($_POST['tablename']));
-                                                
+
 // Here, this is a little tips to manage date format before update the table
 if ($coltype == 'date') {
    if ($value === "") 
