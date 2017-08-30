@@ -17,8 +17,8 @@ $mysqli->options(MYSQLI_OPT_CONNECT_TIMEOUT, 5);
 $mysqli->real_connect($config['db_host'],$config['db_user'],$config['db_password'],$config['db_name']); 
 
 // Get all parameter provided by the javascript
-$name = $mysqli->real_escape_string(strip_tags($_POST['name']));
-$firstname = $mysqli->real_escape_string(strip_tags($_POST['firstname']));
+$name = strip_tags($_POST['name']);
+$firstname = strip_tags($_POST['firstname']);
 $tablename = $mysqli->real_escape_string(strip_tags($_POST['tablename']));
 
 $return=false;
